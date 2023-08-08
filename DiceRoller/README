@@ -1,0 +1,11 @@
+Compile project:
+    javac -d bin/ src/*.java
+
+Run project:
+    java --class-path bin Application
+
+Package project:
+    jar cf dist/Application.jar -C bin .
+
+Run package:
+    java -jar dist/Application.jar
