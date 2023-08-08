@@ -1,0 +1,21 @@
+Compile project:
+    javac --module-path "ext\javafx-sdk-17\lib" --add-modules javafx.controls,javafx.fxml -d bin/ src/*.java
+    cp src/*.css bin/
+    cp src/*.fxml bin/
+
+Run project:
+    java --module-path "ext\javafx-sdk-17\lib" --add-modules javafx.controls,javafx.fxml --class-path "bin;lib/sqlite-jdbc.jar" Main
+
+Package project:
+    jar cfm dist/Main.jar res/Manifest.txt -C bin .
+
+Run package:
+    java --module-path "ext\javafx-sdk-17\lib" --add-modules javafx.controls,javafx.fxml -jar dist/Main.jar
+
+For the application to work, the following steps are required:
+
+1.) Create a directory named "lib" and "ext".
+2.) Download sqlite-jdbc.jar from here: https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+	and javafx-sdk-17;
+3.) Add the downloaded sqlite-jdbc.jar to the "lib" directory and javafx-sdk-17 to the "ext";
+* ) Don't forget to rename the downloaded file to "sqlite-jdbc.jar".

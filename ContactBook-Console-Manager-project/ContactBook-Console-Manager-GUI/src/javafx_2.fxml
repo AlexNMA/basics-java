@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: gray;"
+	xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="javafxcontroller_2">
+	<children>
+		<Pane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+			AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+			<children>
+				<Pane layoutX="-9.0" prefHeight="180.0" prefWidth="470.0">
+					<children>
+						<Button id="sendButtonNewWindow" fx:id="btnok"
+							alignment="CENTER" layoutX="19.0" layoutY="127.0"
+							mnemonicParsing="false" onAction="#sendButtonNewWindowOKClicked"
+							prefHeight="30.0" prefWidth="440.0"
+							style="-fx-background-color: silver; -fx-alignment: CENTER;"
+							text="Send">
+							<font>
+								<Font name="Candara Bold" size="14.0" />
+							</font>
+						</Button>
+						<Label alignment="CENTER" contentDisplay="CENTER"
+							layoutX="16.0" layoutY="42.0" prefHeight="17.0" prefWidth="84.0"
+							text="Name" textFill="WHITE">
+							<font>
+								<Font name="Candara Bold" size="24.0" />
+							</font>
+						</Label>
+						<Label alignment="CENTER" contentDisplay="CENTER"
+							layoutX="14.0" layoutY="85.0" prefHeight="17.0" prefWidth="84.0"
+							text="Age" textFill="WHITE">
+							<font>
+								<Font name="Candara Bold" size="24.0" />
+							</font>
+						</Label>
+						<TextField fx:id="textFiledName" layoutX="105.0"
+							layoutY="41.0" prefHeight="25.0" prefWidth="351.0" />
+						<TextField fx:id="textFiledAge" layoutX="105.0"
+							layoutY="88.0" prefHeight="25.0" prefWidth="351.0" />
+					</children>
+				</Pane>
+			</children>
+		</Pane>
+	</children>
+</AnchorPane>

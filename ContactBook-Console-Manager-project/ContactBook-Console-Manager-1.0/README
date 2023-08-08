@@ -1,0 +1,15 @@
+Compile project:
+    javac -d bin/ src/*.java
+
+Run project:
+    java --class-path bin Application
+
+Package project:
+    jar cf dist/Application.jar -C bin .
+
+Run package:
+    java -jar dist/Application.jar
+
+For the application to work, the following step are required:
+1.) A txt file named "database";
+2.*) Input text should be entered into "database.txt" for processing.

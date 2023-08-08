@@ -1,0 +1,26 @@
+Compile project:
+    javac -d bin/ src/*.java
+
+Run project:
+    java --class-path "bin;lib/sqlite-jdbc.jar" Application
+
+
+Package project:
+    jar cf dist/Application.jar -C bin .
+
+Run package:
+    java -jar dist/Application.jar
+
+For the application to work, the following steps are required:
+
+1.) Create a directory named "lib";
+
+2.) Download sqlite-jdbc.jar from here:
+https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc ;
+
+3.) Add the downloaded sqlite-jdbc.jar to the "lib" directory;
+
+* ) Don't forget to rename the downloaded file to "sqlite-jdbc.jar".
+
+
+
